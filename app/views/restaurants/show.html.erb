@@ -1,3 +1,11 @@
-<%= @restaurant.name %>
-<%= @restaurant.address %>
-<%= @restaurant.phone_number %>
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    
+  </div>
+</div>
+<h1><%= @restaurant.name %></h1>
+    <h2><%= @restaurant.address %></h2>
+    <h3><%= @restaurant.phone_number %></h3>
+    <h3><%= link_to "Review", restaurant_review_path(@restaurant)  %></h3>
+   <%= link_to "Back", restaurants_path, class:"btn btn-primary"  %>

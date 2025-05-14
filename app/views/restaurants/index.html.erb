@@ -4,12 +4,13 @@
     <div class="card">
          <% @restaurants.each do |restaurant| %>
 
-            <div>
+            <div class="card-category mt-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
                 <%=  link_to restaurant.name, restaurant_path(restaurant)  %>
             </div>
         <% end %>
     </div>
-    <div class="btn btn-primary"><%= link_to "Add new restaurant", new_restaurant_path  %></div>
+    <%= link_to "Add new restaurant", new_restaurant_path, class:"btn btn-primary"  %>
    
 
 </div>
+
